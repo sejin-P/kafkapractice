@@ -10,7 +10,7 @@ type kafkaConsumer struct {
 }
 
 func NewKafkaConsumer() Consumer {
-	r := kafka.NewReader(kafka.ReaderConfig{
+	_ = kafka.NewReader(kafka.ReaderConfig{
 		Brokers:  []string{"localhost:9092"},
 		GroupID:  "consumer-group-id",
 		Topic:    "topic-A",
