@@ -12,4 +12,8 @@
 ## 참고한 글
 1. https://www.popit.kr/golang%EC%97%90%EC%84%9C-%EC%B9%B4%ED%94%84%EC%B9%B4-%EC%BB%A8%EC%8A%88%EB%A8%B8-%EA%B7%B8%EB%A3%B9%EA%B3%BC-%EC%9E%AC%EC%8B%9C%EB%8F%84%EB%A1%9C-%EA%B2%B0%EA%B3%BC%EC%A0%81-%EC%9D%BC%EA%B4%80/
 
-2. 
+## protoc command
+protoc --go_out=. --go_opt=paths=source_relative \                                                                                                                 ✔
+--go-grpc_out=. --go-grpc_opt=paths=source_relative \
+protos/v1/empty/number.proto
+
