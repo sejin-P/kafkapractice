@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package v1.park;
+
+option go_package = "github.com/sejin-P/kafkapractice/protos/v1/empty";
+
+service Empty {
+  rpc GetData(GetDataRequest) returns (GetDataResponse);
+}
+
+message ParkMessage {
+  string id = 1;
+  string name = 2;
+}
+
+message GetDataRequest {
+  string id = 1;
+}
+
+message GetParkResponse {
+  ParkMessage message = 1;
+}
